@@ -1,0 +1,51 @@
+# API Configuration
+# Copy this file to config.yaml and add your actual API keys
+
+api_keys:
+  # Google Gemini API (Free tier: https://makersuite.google.com/app/apikey)
+  google_api_key: "YOUR_GOOGLE_API_KEY_HERE"
+  
+  # OpenAI (Optional - only if you have access)
+  openai_api_key: "YOUR_OPENAI_API_KEY_HERE"  # Optional
+
+# Model Configuration
+models:
+  gemini:
+    enabled: true
+    model_name: "gemini-1.5-flash"
+    api_key_env: "google_api_key"
+  
+  ollama_gemma:
+    enabled: true
+    model_name: "gemma:2b"
+    endpoint: "http://localhost:11434"
+  
+  ollama_mistral:
+    enabled: true
+    model_name: "mistral:7b"
+    endpoint: "http://localhost:11434"
+  
+  ollama_llama:
+    enabled: false
+    model_name: "llama2:7b"
+    endpoint: "http://localhost:11434"
+  
+  ollama_deepseek:
+    enabled: false
+    model_name: "deepseek-r1:7b"
+    endpoint: "http://localhost:11434"
+
+# Testing Configuration
+testing:
+  max_retries: 3
+  timeout: 30
+  delay_between_tests: 1
+  verbose: true
+
+# Output Configuration
+output:
+  results_dir: "data/results"
+  formats:
+    - csv
+    - json
+  create_plots: true

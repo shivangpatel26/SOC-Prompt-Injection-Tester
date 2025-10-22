@@ -205,3 +205,31 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# API Keys and Configuration
+config.yaml
+.env
+*.key
+
+# Test Results (may contain sensitive data)
+data/results/*
+!data/results/.gitkeep
+
+# Local model files
+models/
+*.bin
+*.gguf
+
+# Ollama
+.ollama/
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
