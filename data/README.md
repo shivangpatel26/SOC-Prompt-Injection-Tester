@@ -248,7 +248,7 @@ If you use this dataset in your research, please cite:
 
 ```
 Shivang Patel (2025). SOC Prompt Injection Testing Toolkit Dataset.
-University of Adelaide. https://github.com/[username]/SOC-Prompt-Injection-Tester
+University of Adelaide. https://github.com/shivangpatel26/SOC-Prompt-Injection-Tester
 ```
 
 ## License
